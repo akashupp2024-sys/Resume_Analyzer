@@ -28,3 +28,5 @@ SmartHire AI is an AI-powered Resume Analyzer and Job Matching System designed t
 - Resume improvement suggestions
 - Integration with LLM APIs (OpenAI/Gemini)
 - Real-time job recommendations
+
+https://akashupp2024-sys.github.io/Resume_Analyzer/ ## Website Preview

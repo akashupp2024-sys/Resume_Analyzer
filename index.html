@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SmartHire AI</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 40px;
+        }
+        .container {
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 10px;
+            width: 50%;
+            margin: auto;
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+        }
+        input, textarea {
+            width: 90%;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        button {
+            padding: 12px 25px;
+            background: #3b82f6;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #2563eb;
+        }
+        .result {
+            margin-top: 20px;
+            background: #334155;
+            padding: 15px;
+            border-radius: 8px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🤖 SmartHire AI</h1>
+    <p>AI Resume Analyzer & Job Matching System</p>
+
+    <div class="container">
+        <h2>Upload Resume</h2>
+        <input type="file">
+
+        <h2>Paste Job Description</h2>
+        <textarea rows="5" placeholder="Enter job description..."></textarea>
+
+        <br>
+        <button onclick="analyze()">Analyze</button>
+
+        <div class="result" id="resultBox">
+            <h3>📊 Result</h3>
+            <p><strong>Match Score:</strong> 87%</p>
+            <p><strong>Skills Detected:</strong> Python, Machine Learning, React</p>
+            <p><strong>Recommendation:</strong> ✅ Strong Candidate</p>
+        </div>
+    </div>
+
+    <script>
+        function analyze() {
+            document.getElementById("resultBox").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
